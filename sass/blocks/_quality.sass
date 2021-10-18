@@ -22,6 +22,7 @@
                         width: 244px
                         height: 244px
                         border: solid 2px rgba(133,133,133, .5)
+                        cursor: pointer
                         .circle__img
                             width: 100%
                             &_1
@@ -30,6 +31,9 @@
                                 transform: translate(-14%,26%) scale(2.3)
                             &_3
                                 transform: translate(0, -17%) scale(1)
+                        &:hover
+                            .shape__circle
+                                background-color: rgba(184, 9, 9, .96)
                         .shape__circle
                             position: absolute
                             bottom: 50%
@@ -42,8 +46,6 @@
                             border-radius: 50%
                             transition: all 0.5s
                             cursor: pointer
-                            &:hover
-                                background-color: rgba(184, 9, 9, .96)
                             .shape__play
                                 margin: 0 auto
                                 border-top: 13px solid transparent
