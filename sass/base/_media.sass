@@ -1,3 +1,8 @@
+@media (max-width: 1440px)
+    .video
+        .video__square
+            width: 97%
+
 @media (max-width: 1024px)
     .design
         .design__wrapper 
@@ -13,7 +18,28 @@
                 .design__image__box 
                     .design__image 
                         width: 571px
-
+@media (max-width: 768px)
+    .design
+        .design__wrapper
+            .design__card
+                flex-wrap: wrap
+            .design__divider
+                margin: 5px
+    .video
+        .video__wrapper
+            justify-content: center
+            .video__wrapper__hor
+                flex-direction: column
+    .about
+        .about__wrapper
+            .about__card
+                flex-direction: column
+                .shapes__box_ab
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    .shape__line_thin
+                        position: relative
 
 @media (max-width: 480px)
     .promo
@@ -28,17 +54,137 @@
             .promo__logo
                 width: 143px
                 height: 100%
+            nav
+                margin-top: 20px
         .promo__wrapper
             .center__block
                 order: -1
                 .center__pos__block
                     h1
                         font-size: 61px
+                    .scrolling__ico
+                        display: none
             .horizontal__left__text
                 display: none
+
+    .design 
+        .design__wrapper 
+            .design__divider
+                display: none
+            .design__card 
+                .shapes__box_ith
+                    margin-top: 50px
+                    order: 1
+                .design__descr_ith
+                    order: 3
+                .design__image__box 
+                    &_ith
+                        order: 2
+                    .design__image
+                        width: 371px
+    .quality
+        .quality__wrapper 
+            .quality__header
+                .subscr_quality
+                    width: 100%
+            .quality__video-box
+                flex-wrap: wrap
+                justify-content: center
+                .video__block
+                    margin-bottom: 50px
+    .header
+        font-size: 39px
+    .video
+        .video__wrapper
+            align-items: flex-end
+            .video__wrapper__hor
+                .video__descr
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    .video__header
+                        width: 80%
+                    .video__subheader
+                        width: 80%
+    .about
+        .about__wrapper
+            .about__card
+                .about__image__box_ab
+                    .about__image
+                        width: 100%
+@media (max-width: 740px)
+    .promo
+        .promo__wrapper 
+            .center__block 
+                .center__pos__block 
+                    h1
+                        font-size: 87px
+    .design 
+        .design__wrapper 
+            .design__card 
+                .design__image__box 
+                    .design__image
+                        width: 100%
+    .quality
+        .quality__wrapper 
+            .quality__video-box 
+                .video__block 
+                    .video__card 
+                        .rolling__img
+                            height: 165px !important
+                            width: 165px !important
+    .about
+        .about__wrapper
+            .about__card
+                .about__image__box_ab
+                    .about__image
+                        width: 100%
+
+@media (max-width: 475px)
+    .header
+        font-size: 40px !important
+    .video
+        .video__wrapper
+            .video__wrapper__hor
+                .video__descr 
+                    .video__header
+                        width: 80%
+                        font-size: 38px
+                        margin-bottom: 10px
+                    .video__subheader
+                        margin-bottom: 15px
+                    .button_video
+                        width: 75%
+
 @media (max-width: 541px)
     .promo
         overflow: hidden
+
+@media (max-width: 991px)
+    .design 
+        .design__wrapper 
+            .design__card 
+                .design__image__box 
+                    .design__image
+                        width: 100%
+    .quality__wrapper 
+        .quality__video-box 
+            .video__block 
+                .video__card 
+                    .rolling__img
+                        width: 214px !important
+                        height: 214px !important
+    .about
+        .about__wrapper
+            .about__card
+                flex-direction: column
+                .about__descr_ab
+                    .subscr
+                        width: 100%
+                        font-size: 17px
+    .video
+        .video__wrapper
+            align-items: center
 @media (max-width: 320px)
     .promo
         .promo__header 
@@ -48,6 +194,8 @@
         .promo__wrapper 
             flex-wrap: wrap
             justify-content: flex-end
+            .horizontal__dots__box
+                margin-top: 50px
             .center__block 
                 .center__pos__block 
                     h1
@@ -55,3 +203,23 @@
                         letter-spacing: 14px
                     .button_promo
                         width: 302px
+    .design 
+        .design__wrapper 
+            .design__card 
+                .design__descr
+                    .subscr
+                        width: 290px
+                .design__image__box 
+                    .design__image
+                        width: 100%
+    .video
+        .video__wrapper
+            .video__wrapper__hor
+                .video__descr
+                    .video__header
+                        font-size: 36px
+                    .video__subheader
+                        width: 230px
+    .about
+        .subscr
+            width: 290px
