@@ -13,11 +13,15 @@
                 display: flex
                 justify-content: space-between
                 width: 60%
-            .nav__item
+            .nav__item__link
                 font-size: 15px
                 font-weight: bold
                 text-transform: uppercase
                 color: rgba(255, 255, 255, 0.5)
+                text-decoration: none
+                transition: all 0.5s
+                &:hover
+                    color: #fff
     &__wrapper
         margin-top: 242px
         display: flex
@@ -54,6 +58,10 @@
                     color: #bea67c
                 .scrolling__ico
                     margin-top: 68px
+                    animation: scroll-down
+                    animation-duration: 3s
+                    animation-timing-function: linear
+                    animation-iteration-count: infinite
                     .ico__mouse
                         transform: scale(1, -1)
                         font-size: 27px

@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section class="promo" id="home">
         <div class="container">
             <div class="promo__header">
                 <div class="nav__items">
                     <img src="ico/logo/logo.png" alt="logo" class="promo__logo">
                     <nav>
-                        <div class="nav__item">Home</div>
-                        <div class="nav__item">products</div>
-                        <div class="nav__item">About</div>
+                        <a href="#home" class="nav__item__link">Home</a> 
+                        <a href="#products" class="nav__item__link">products</a>
+                        <a href="#aboutis" class="nav__item__link">About</a>
                     </nav>
                 </div>
             </div>
@@ -36,8 +36,8 @@
                 <div class="center__block">
                     <div class="center__pos__block">
                         <h1>Wooder</h1>
-                        <button class="button button_promo">learn more &rarr;</button>
-                        <div class="scrolling__ico">
+                        <button action="#products" class="button button_promo">learn more &rarr;</button>
+                        <div class="scrolling__ico scroll-down">
                             <div class="ico__mouse"><i class="fas fa-mouse"></i></i></div>
                             <div class="arrow__down"><i class="fas fa-long-arrow-alt-down"></i></div>
                             <div class="text__scroll">scroll</div>
@@ -53,7 +53,7 @@
         </div>
     </section>
 
-    <section class="design">
+    <section class="design" id="products">
         <div class="container">
             <div class="design__wrapper">
                 <div class="design__card">
@@ -176,7 +176,7 @@
                             wood décor high standard. Creating modern designs. 
                             Adhering to the global quality standards. And we are 
                             doing work with love.</div>
-                        <button class="button button_video"><i class="far fa-play-circle"></i> watch video</button>
+                        <button data-modal="discounter" class="button button_video"><i class="far fa-play-circle"></i> watch video</button>
                     </div>
                 </div>
             </div>
@@ -184,7 +184,7 @@
         <div class="video__square"></div>
     </section>
 
-    <section class="about">
+    <section class="about" id="aboutis">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__card">
@@ -211,8 +211,28 @@
         </div>
     </section>
 
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__copirate">© 2021 WOODER</div>
+                <img src="ico/logo/logo.png" alt="logo" class="footer__logo">
+                <a href="https://vk.com/def_olt" class="footer__developer">Developed by <span>Romanov Michael</span></a>
+            </div>
+        </div>
+        <div class="bg-black"></div>
+    </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <div class="overlay">
+        <div class="container">
+            <div class="modal" id="discounter">
+                <div class="modal__close">&times;</div>
+                <iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/kSUxuo8WvGI?autoplay=1&controls=0" frameborder="0" allowfullscreen>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/073ad96d9b.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
