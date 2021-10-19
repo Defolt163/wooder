@@ -25,9 +25,9 @@ $(document).ready(function(){
       $('.overlay, #quality').fadeIn();
     });
   
-    $('.modal__close').on('click', function(){
+    $('.modal__close, .overlay').on('click', function(){
       $('.overlay, #discounter, #innovative, #skills, #quality').fadeOut();
       var leg=$('#ytplayer').attr("src");
-      $('#ytplayer, #innovative, #skills, #quality').attr("src",leg);
+      $('#ytplayer').attr("src",leg);
     });
 });
