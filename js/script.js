@@ -27,7 +27,13 @@ $(document).ready(function(){
   
     $('.modal__close, .overlay').on('click', function(){
       $('.overlay, #discounter, #innovative, #skills, #quality').fadeOut();
-      var leg=$('#ytplayer').attr("src");
-      $('#ytplayer').attr("src",leg);
+      var leg=$('#ytplayer-d').attr("src");
+      $('#ytplayer-d').attr("src",leg);
+      var leg=$('#ytplayer-1').attr("src");
+      $('#ytplayer-1').attr("src",leg);
+      var leg=$('#ytplayer-2').attr("src");
+      $('#ytplayer-2').attr("src",leg);
+      var leg=$('#ytplayer-3').attr("src");
+      $('#ytplayer-3').attr("src",leg);
     });
 });
